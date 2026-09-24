@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="En">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+        color: #ffffff;
+        font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        display: inline-block;
+      }
+      button {
+        background-color: #ff4757;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      button:hover {
+        transform: scale(1.1);
+        background-color: #ff6b81;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>🥳Happy Birthday Baby!🎂</h1>
+      <p>click me</p>
+      <button onclick="playMusic()">open the gift</button>
+    </div>
+    <audio id="birthdaySong" src="https://pixabay.com/music/happy-childrens-tunes-happy-birthday-578363/" loop></audio>
+    
+    <script>
+      function playMusic() {
+        var audio = document.getElementById("birthdaySong");
+        audio.play();
+        alert("🥳Wishing you a fantastic year filled with joy and success!💕");
+    </script>
+    
+  </body>
+</html>
